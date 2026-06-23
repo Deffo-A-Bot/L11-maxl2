@@ -20,6 +20,8 @@
                 <textarea class="notepad" id="note-area"></textarea>
                 <button class="save-button" onclick="save()">Save</button>
             </div>
+            <div class="widget"></div>
+            <div class="widget"></div>
            </div>
         </div>
     </div>
@@ -27,6 +29,10 @@
 
 <script>
 dateTime();
+let notes = localStorage.getItem("notes");
+if (notes) {
+    document.getElementById("note-area").value = notes;
+}
 </script>
 </html>
 
