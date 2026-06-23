@@ -16,5 +16,11 @@ function checkTime(i) {
     return i;
 }
 
-
+function dateTime() {
+    const today = new Date();
+    let day = today.getDate();
+    let month = today.getMonth() + 1;
+    let year = today.getFullYear();
+    document.getElementById('date').innerHTML = month + "/" + day + "/" + year;
+}
 
