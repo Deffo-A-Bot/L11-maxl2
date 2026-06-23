@@ -24,3 +24,8 @@ function dateTime() {
     document.getElementById('date').innerHTML = month + "/" + day + "/" + year;
 }
 
+function save() {
+    let notes = document.getElementById('note-area').value;
+    localStorage.setItem('note', notes);
+}
+
