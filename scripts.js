@@ -25,7 +25,7 @@ function dateTime() {
 }
 
 function save() {
-    let notes = document.getElementById('note-area').value;
-    localStorage.setItem('note', notes);
+    let notes = document.getElementById('notepad').value;
+    localStorage.setItem('notes', notes);
 }
 

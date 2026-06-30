@@ -17,7 +17,7 @@
         </div>
         <div class="main">
            <div class="widget">
-                <textarea class="notepad" id="note-area"></textarea>
+                <textarea class="notepad" id="notepad"></textarea>
                 <button class="save-button" onclick="save()">Save</button>
             </div>
             <div class="widget"></div>
@@ -30,7 +30,7 @@
 <script>
 dateTime();
 let notes = localStorage.getItem("notes");
-document.getElementById("note-area").value = notes;
+document.getElementById("notepad").value = notes;
 </script>
 </html>
 
